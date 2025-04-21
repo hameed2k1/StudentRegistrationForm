@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <form action="#" method="post">
+      <div class="header">
+        <div class="logo">
+          <img src="images/institute-logo.png" alt="Institute Logo" class="institute-logo">
+          <div>
+            <div>Muslim Youth University</div>
+            <div>Japan Road,</div>
+            <div>Islamabad.</div>
+            <div>Tel: 03426519905</div>
+            <div>E-mail: bse221001@myu.edu.pk</div>
+          </div>
+        </div>
+        <img src="images/my-photo.jpg" alt="Student Photo" class="student-photo-top">
+      </div>
+
+      <div class="title">Student Registration Form</div>
+
+      <div class="section">
+        <div class="section-title">Student Information</div>
+        <div class="form-group">
+          <label>Full Name:</label><input type="text" name="full_name" required>
+        </div>
+        <div class="form-group">
+          <label for="gender">Gender:</label>
+          <div class="gender-group">
+            <label><input type="radio" name="gender" value="male" required> Male</label>
+            <label><input type="radio" name="gender" value="female"> Female</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Nationality:</label><input type="text" name="nationality">
+        </div>
+        <div class="form-group">
+          <label>Contact Info:</label><input type="text" name="student_contact">
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Parent/Guardian Information</div>
+        <div class="form-group">
+          <label>Parent/Guardian Name:</label><input type="text" name="guardian_name">
+        </div>
+        <div class="form-group">
+          <label>Relationship:</label><input type="text" name="relationship">
+        </div>
+        <div class="form-group">
+          <label>Contact Info:</label><input type="text" name="guardian_contact">
+        </div>
+        <div class="form-group">
+          <label>Emergency Contact:</label><input type="text" name="emergency_contact">
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-title">Education Information</div>
+        <div class="form-group">
+          <label>Institution Name:</label><input type="text" name="school_name">
+        </div>
+        <div class="form-group">
+          <label>Graduation Date:</label><input type="date" name="graduation_date">
+        </div>
+        <div class="form-group">
+          <label>How did you hear about us?</label><input type="text" name="referral_source">
+        </div>
+        <div class="form-group">
+          <label>Why are you interested in our program?</label>
+          <textarea name="interest_reason" rows="4"></textarea>
+        </div>
+      </div>
+
+      <div class="form-group thumbs-group">
+        <label>Do you agree to the terms and conditions?</label>
+        <div class="icon-thumbs">
+          <label><input type="radio" name="agree" value="yes" required> <span class="thumbs-up">👍</span></label>
+          <label><input type="radio" name="agree" value="no"> <span class="thumbs-down">👎</span></label>
+        </div>
+      </div>
+
+      <div class="terms-note">* Terms and Conditions</div>
+
+      <div class="form-group vertical">
+        <label>Signature of student and, if the student is a minor, a parent or guardian:</label>
+        <div class="signature-box"></div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

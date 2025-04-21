@@ -1,0 +1,166 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fef9e7;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff8dc;
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.institute-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.student-photo-top {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #ff6600;
+}
+
+.title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  background-color: #f9a825;
+  color: white;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  flex: 0 0 40%;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+input[type="date"],
+input[type="email"],
+textarea {
+  flex: 1;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  min-width: 200px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.gender-group {
+  flex: 1;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.thumbs-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.thumbs-group label {
+  flex: 0 0 40%;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.icon-thumbs {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.icon-thumbs label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: normal;
+}
+
+.signature-box {
+  height: 50px;
+  width: 250px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.form-group.vertical {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.terms-note {
+  margin-bottom: 8px;
+  font-size: 0.85em;
+  color: #555;
+}
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-group label,
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+  }
+
+  .student-photo-top {
+    margin-top: 10px;
+  }
+}
+  
+  
